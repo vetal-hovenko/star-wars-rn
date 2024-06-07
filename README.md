@@ -1,4 +1,4 @@
-# StarWarsTest
+# 🌌StarWarsTest
 
 Hi! This is a React Native test assignment featuring Star Wars characters.
 
@@ -25,11 +25,17 @@ This project is a mobile application that allows users to browse and interact wi
 1. Clone the repository:
 
     ```bash
-    git clone URL
+    git clone https://github.com/vetal-hovenko/star-wars-rn.git
 
     ```
 
-2. Install the dependencies:
+2. Go to the project directory:
+
+    ```bash
+    cd star-wars-rn
+    ```
+    
+3. Install the dependencies:
 
     ```bash
     npm install
