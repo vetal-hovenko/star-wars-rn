@@ -14,6 +14,12 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-StarWarsTest-StarWarsTestTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-StarWarsTest-StarWarsTestTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		167BF6E1CEF442A88C0E511F /* Amaranth-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 014DA30F5FA848FC87AA43DB /* Amaranth-Regular.ttf */; };
+		3333BC130A9B42B6B7B3B194 /* Changa-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35E915D204344CBB9D6608CC /* Changa-VariableFont_wght.ttf */; };
+		962F0BD5D7F94EB8A058F1EB /* Cinzel-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8471E486689442499276E863 /* Cinzel-VariableFont_wght.ttf */; };
+		A467518B6764483993743A2E /* CourierPrime-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8F342459520847B089715FE6 /* CourierPrime-Regular.ttf */; };
+		01D623C236074F85A161D3F5 /* Oswald-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BDC3F43E9A7E41B8BB38AA61 /* Oswald-VariableFont_wght.ttf */; };
+		94313CE052B9483CBA46B1A7 /* SeymourOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3648C1850CDB4B0797C44E5E /* SeymourOne-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +42,7 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = StarWarsTest/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = StarWarsTest/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = StarWarsTest/main.m; sourceTree = "<group>"; };
-	    13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = StarWarsTest/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = StarWarsTest/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-StarWarsTest-StarWarsTestTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-StarWarsTest-StarWarsTestTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4392A12AC88292D35C810B /* Pods-StarWarsTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarWarsTest.debug.xcconfig"; path = "Target Support Files/Pods-StarWarsTest/Pods-StarWarsTest.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-StarWarsTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarWarsTest.release.xcconfig"; path = "Target Support Files/Pods-StarWarsTest/Pods-StarWarsTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -45,6 +51,12 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = StarWarsTest/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-StarWarsTest-StarWarsTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StarWarsTest-StarWarsTestTests.release.xcconfig"; path = "Target Support Files/Pods-StarWarsTest-StarWarsTestTests/Pods-StarWarsTest-StarWarsTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
+		014DA30F5FA848FC87AA43DB /* Amaranth-Regular.ttf */ = {isa = PBXFileReference; name = "Amaranth-Regular.ttf"; path = "../assets/fonts/Amaranth-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		35E915D204344CBB9D6608CC /* Changa-VariableFont_wght.ttf */ = {isa = PBXFileReference; name = "Changa-VariableFont_wght.ttf"; path = "../assets/fonts/Changa-VariableFont_wght.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8471E486689442499276E863 /* Cinzel-VariableFont_wght.ttf */ = {isa = PBXFileReference; name = "Cinzel-VariableFont_wght.ttf"; path = "../assets/fonts/Cinzel-VariableFont_wght.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8F342459520847B089715FE6 /* CourierPrime-Regular.ttf */ = {isa = PBXFileReference; name = "CourierPrime-Regular.ttf"; path = "../assets/fonts/CourierPrime-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BDC3F43E9A7E41B8BB38AA61 /* Oswald-VariableFont_wght.ttf */ = {isa = PBXFileReference; name = "Oswald-VariableFont_wght.ttf"; path = "../assets/fonts/Oswald-VariableFont_wght.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3648C1850CDB4B0797C44E5E /* SeymourOne-Regular.ttf */ = {isa = PBXFileReference; name = "SeymourOne-Regular.ttf"; path = "../assets/fonts/SeymourOne-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +136,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				FD0EFC3A3D2344F69394ABCE /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -149,6 +162,20 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		FD0EFC3A3D2344F69394ABCE /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				014DA30F5FA848FC87AA43DB /* Amaranth-Regular.ttf */,
+				35E915D204344CBB9D6608CC /* Changa-VariableFont_wght.ttf */,
+				8471E486689442499276E863 /* Cinzel-VariableFont_wght.ttf */,
+				8F342459520847B089715FE6 /* CourierPrime-Regular.ttf */,
+				BDC3F43E9A7E41B8BB38AA61 /* Oswald-VariableFont_wght.ttf */,
+				3648C1850CDB4B0797C44E5E /* SeymourOne-Regular.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -245,6 +272,12 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+				167BF6E1CEF442A88C0E511F /* Amaranth-Regular.ttf in Resources */,
+				3333BC130A9B42B6B7B3B194 /* Changa-VariableFont_wght.ttf in Resources */,
+				962F0BD5D7F94EB8A058F1EB /* Cinzel-VariableFont_wght.ttf in Resources */,
+				A467518B6764483993743A2E /* CourierPrime-Regular.ttf in Resources */,
+				01D623C236074F85A161D3F5 /* Oswald-VariableFont_wght.ttf in Resources */,
+				94313CE052B9483CBA46B1A7 /* SeymourOne-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

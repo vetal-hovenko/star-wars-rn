@@ -1,0 +1,29 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/Amaranth-Regular.ttf",
+      "sha1": "31183b9474598109c8a98de48f0dfbda02c117e2"
+    },
+    {
+      "path": "assets/fonts/Changa-VariableFont_wght.ttf",
+      "sha1": "30ff952b99e1fc9c60967109951ce7801c8d202d"
+    },
+    {
+      "path": "assets/fonts/Cinzel-VariableFont_wght.ttf",
+      "sha1": "9feb2b3df60dede129754df7b70f5a264801115d"
+    },
+    {
+      "path": "assets/fonts/CourierPrime-Regular.ttf",
+      "sha1": "f0e110c73ff02b2fc7f60bd96697c42ee9730ae2"
+    },
+    {
+      "path": "assets/fonts/Oswald-VariableFont_wght.ttf",
+      "sha1": "83708d011b4d9bab0f4e275cf22b588558037a79"
+    },
+    {
+      "path": "assets/fonts/SeymourOne-Regular.ttf",
+      "sha1": "5b334316a0329b9aed95217465d5b9054c4f9c29"
+    }
+  ]
+}

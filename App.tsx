@@ -1,118 +1,62 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
+import React, {useEffect, useState} from 'react';
 
-import React from 'react';
-import type {PropsWithChildren} from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  Text,
-  useColorScheme,
-  View,
-} from 'react-native';
-
-import {
-  Colors,
-  DebugInstructions,
-  Header,
-  LearnMoreLinks,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
-
-type SectionProps = PropsWithChildren<{
-  title: string;
-}>;
-
-function Section({children, title}: SectionProps): React.JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
-  return (
-    <View style={styles.sectionContainer}>
-      <Text
-        style={[
-          styles.sectionTitle,
-          {
-            color: isDarkMode ? Colors.white : Colors.black,
-          },
-        ]}>
-        {title}
-      </Text>
-      <Text
-        style={[
-          styles.sectionDescription,
-          {
-            color: isDarkMode ? Colors.light : Colors.dark,
-          },
-        ]}>
-        {children}
-      </Text>
-    </View>
-  );
-}
+import {SafeAreaView, StyleSheet} from 'react-native';
+import {Character} from './src/lib/types/Character';
+import {getCharactersPerPage} from './src/lib/utils/getCharactersPerPage';
+import CharactersList from './src/components/CharactersList';
+import CharactersListPagination from './src/components/CharactersListPagination';
+import FavoriteCharacters from './src/components/FavoriteCharacters';
+import {Provider} from 'react-redux';
+import store from './src/redux/store';
 
 function App(): React.JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
+    const [characters, setCharacters] = useState<Character[]>([]);
+    const [charactersAmount, setCharactersAmount] = useState(0);
+    const [currentPage, setCurrentPage] = useState(1);
+    const [isNextPageAvailable, setIsNextPageAvailable] = useState(false);
+    const [isPrevPageAvailable, setIsPrevPageAvailable] = useState(false);
 
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
+    useEffect(() => {
+        const initializeCharacters = async () => {
+            setIsNextPageAvailable(false);
+            setIsPrevPageAvailable(false);
 
-  return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar
-        barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-        backgroundColor={backgroundStyle.backgroundColor}
-      />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}>
-        <Header />
-        <View
-          style={{
-            backgroundColor: isDarkMode ? Colors.black : Colors.white,
-          }}>
-          <Section title="Step One">
-            Edit <Text style={styles.highlight}>App.tsx</Text> to change this
-            screen and then come back to see your edits.
-          </Section>
-          <Section title="See Your Changes">
-            <ReloadInstructions />
-          </Section>
-          <Section title="Debug">
-            <DebugInstructions />
-          </Section>
-          <Section title="Learn More">
-            Read the docs to discover what to do next:
-          </Section>
-          <LearnMoreLinks />
-        </View>
-      </ScrollView>
-    </SafeAreaView>
-  );
+            const charactersResponse = await getCharactersPerPage(currentPage);
+
+            const {results, count, next, previous} = charactersResponse;
+            setCharacters(results);
+            setCharactersAmount(count);
+            setIsNextPageAvailable(!!next);
+            setIsPrevPageAvailable(!!previous);
+        };
+
+        initializeCharacters();
+    }, [currentPage]);
+
+    return (
+        <Provider store={store}>
+            <SafeAreaView style={styles.wrapper}>
+                <FavoriteCharacters />
+                <CharactersList characters={characters} />
+                <CharactersListPagination
+                    setCurrentPage={setCurrentPage}
+                    currentPage={currentPage}
+                    isNextPageAvailable={isNextPageAvailable}
+                    isPrevPageAvailable={isPrevPageAvailable}
+                    charactersAmount={charactersAmount}
+                />
+            </SafeAreaView>
+        </Provider>
+    );
 }
 
 const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
-  },
+    wrapper: {
+        flex: 1,
+        backgroundColor: '#1B1B1B',
+        paddingHorizontal: 16,
+        paddingVertical: 32,
+    },
 });
 
 export default App;
