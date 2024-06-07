@@ -29,6 +29,12 @@ This project is a mobile application that allows users to browse and interact wi
 
     ```
 
+2. Go to the project directory:
+
+    ```bash
+    cd star-wars-rn
+    ```
+    
 2. Install the dependencies:
 
     ```bash
